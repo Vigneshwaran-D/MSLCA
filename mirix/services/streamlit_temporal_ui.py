@@ -36,7 +36,7 @@ class TemporalReasoningUI:
     def __init__(self):
         """Initialize the UI"""
         st.set_page_config(
-            page_title="MIRIX Temporal Reasoning",
+            page_title="MSLCA Temporal Reasoning",
             page_icon="🧠",
             layout="wide",
             initial_sidebar_state="expanded",
@@ -44,7 +44,7 @@ class TemporalReasoningUI:
 
     def render(self):
         """Render the complete UI"""
-        st.title("🧠 MIRIX Temporal Reasoning & Memory Decay")
+        st.title("🧠 MSLCA Temporal Reasoning & Memory Decay")
         st.markdown("---")
 
         # Sidebar for configuration
@@ -208,7 +208,7 @@ class TemporalReasoningUI:
 
     def render_chat(self):
         """Render the chat interface"""
-        st.header("💬 MIRIX Chat Assistant")
+        st.header("💬 MSLCA Chat Assistant")
 
         # Chat works with or without database
         # Database is only needed for persistent storage
@@ -478,7 +478,7 @@ class TemporalReasoningUI:
         ])
         
         # Create prompt with system context
-        system_context = """You are a helpful AI assistant integrated with MIRIX, a memory management system with temporal reasoning. 
+        system_context = """You are a helpful AI assistant integrated with MSLCA, a memory management system with temporal reasoning. 
 All our conversations are stored with temporal decay - older, less important messages gradually fade. 
 You can discuss temporal reasoning, memory decay, and general topics."""
         
@@ -670,7 +670,7 @@ You can discuss temporal reasoning, memory decay, and general topics."""
         if "temporal" in user_input.lower() or "memory" in user_input.lower():
             return f"I understand you're asking about temporal reasoning and memory. In this system, all our conversations are stored with temporal decay - meaning older, less important messages will gradually fade. Your current chat session has {len(chat_history)} messages.\n\n(Note: AI model error - using fallback response)"
         elif "hello" in user_input.lower() or "hi" in user_input.lower():
-            return f"Hello! I'm your MIRIX assistant. I can help you understand temporal reasoning, memory decay, and answer general questions. What would you like to know?\n\n(Note: AI model error - using fallback response)"
+            return f"Hello! I'm your MSLCA assistant. I can help you understand temporal reasoning, memory decay, and answer general questions. What would you like to know?\n\n(Note: AI model error - using fallback response)"
         else:
             return f"I received your message about '{user_input}'. (Note: AI model error - using fallback response)\n\nError details: {error}"
 

@@ -82,6 +82,7 @@ python scripts/generate_synthetic_test_data.py \
 | Document | Purpose |
 |----------|---------|
 | [QUICK-REFERENCE-TEMPORAL-MEMORY.md](docs/QUICK-REFERENCE-TEMPORAL-MEMORY.md) | Quick reference card for temporal memory |
+| **[2025-11-18-temporal-techniques-mathematical-reference.md](docs/2025-11-18-temporal-techniques-mathematical-reference.md)** | **Complete mathematical formulas and techniques explained** |
 | [2025-11-18-TEMPORAL-MEMORY-STATUS.md](docs/2025-11-18-TEMPORAL-MEMORY-STATUS.md) | Comprehensive status report |
 | [2025-11-18-feature-comparison.md](docs/2025-11-18-feature-comparison.md) | Feature matrix and comparison |
 | [2025-11-18-feature-audit-summary.md](docs/2025-11-18-feature-audit-summary.md) | 42-feature detailed audit |
@@ -188,6 +189,7 @@ All diagrams render in GitHub, VS Code, and modern markdown viewers.
 **Start Here:**
 - Section 1: Executive Summary
 - Section 5: Temporal Reasoning Engine
+- **[Mathematical Reference Guide](docs/2025-11-18-temporal-techniques-mathematical-reference.md)** - Complete formulas and calculations
 - Section 4: Memory System Architecture
 
 **Key Topics:**
@@ -195,6 +197,8 @@ All diagrams render in GitHub, VS Code, and modern markdown viewers.
 - Memory rehearsal mechanisms
 - Forgetting criteria and algorithms
 - Multi-agent coordination
+- BM25 ranking algorithm
+- Cosine similarity metrics
 
 ---
 
@@ -234,6 +238,16 @@ temporal_score = importance × decay + 0.3 × recency + 0.2 × frequency
 ```
 final_score = 0.6 × relevance_score + 0.4 × temporal_score
 ```
+
+**📐 For Complete Mathematical Explanations:**
+
+See **[Mathematical Reference Guide](docs/2025-11-18-temporal-techniques-mathematical-reference.md)** for:
+- ✅ Step-by-step formula derivations
+- ✅ Worked calculation examples
+- ✅ All thresholds explained
+- ✅ BM25 algorithm detailed
+- ✅ Similarity metrics
+- ✅ Parameter tuning guidelines
 
 ### Key Configuration
 
@@ -419,7 +433,16 @@ See [2025-11-18-enhancement-roadmap.md](docs/2025-11-18-enhancement-roadmap.md) 
 3. Study all 8 diagrams
 4. Generate and test with synthetic data
 
-### Path 4: Operations & Deployment (1 hour)
+### Path 4: Mathematical Deep Dive (2 hours)
+1. Read **[Mathematical Reference Guide](docs/2025-11-18-temporal-techniques-mathematical-reference.md)**
+   - Complete formula explanations
+   - Step-by-step calculations
+   - All techniques with examples
+2. Cross-reference with Temporal Reasoning Engine (Section 5)
+3. Review implementation code
+4. Test with different parameters
+
+### Path 5: Operations & Deployment (1 hour)
 1. Database Architecture (Section 9)
 2. Configuration & Settings (Section 11)
 3. Performance & Optimization (Section 14)

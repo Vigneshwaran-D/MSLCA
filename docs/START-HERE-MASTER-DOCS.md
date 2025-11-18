@@ -104,6 +104,32 @@ python scripts/verify_temporal_features.py
 python scripts/generate_synthetic_test_data.py --org-id 1234 --user-id user-d1850539
 ```
 
+### Path 5: "I Want Deep Mathematical Understanding"
+**Estimated Time:** 2 hours
+
+**Read:**
+1. `docs/2025-11-18-temporal-techniques-mathematical-reference.md` - Complete mathematical reference
+   - All decay formulas with examples
+   - Threshold calculations
+   - Retrieval weight combinations
+   - BM25 algorithm explained
+   - Similarity metrics
+   - Step-by-step calculations
+
+**Then Cross-Reference:**
+2. **Section 5:** Temporal Reasoning Engine (implementation)
+3. Review actual implementation in:
+   ```bash
+   code mirix/services/temporal_reasoning_service.py
+   ```
+
+**Then Try:**
+```bash
+# Test with different parameters and observe behavior
+export MIRIX_TEMPORAL_DECAY_LAMBDA=0.1  # Faster decay
+python scripts/verify_temporal_features.py
+```
+
 ---
 
 ## 📊 Document Contents at a Glance
@@ -209,6 +235,7 @@ print(f"Would delete: {sum(stats.values())} memories")
 | `2025-11-18-MASTER-DOCUMENTATION-SUMMARY.md` | Document overview |
 | `START-HERE-MASTER-DOCS.md` | **This file** - Quick start |
 | `QUICK-REFERENCE-TEMPORAL-MEMORY.md` | Quick reference card |
+| `2025-11-18-temporal-techniques-mathematical-reference.md` | **Mathematical formulas & techniques** |
 | `2025-11-18-feature-comparison.md` | Feature matrix |
 | `2025-11-18-enhancement-roadmap.md` | Implementation plan |
 | `2025-11-18-TEMPORAL-MEMORY-STATUS.md` | Status report |
