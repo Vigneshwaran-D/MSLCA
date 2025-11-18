@@ -5,9 +5,10 @@ openpyxl
 Markdown
 Pillow>=10.2.0,<11.0.0
 scikit-image
-openai==1.72.0
+openai>=1.104.2,<2.0.0
 tiktoken
 google-genai
+google-generativeai>=0.8.0
 python-dotenv
 demjson3
 pathvalidate
@@ -18,7 +19,7 @@ jinja2
 humps
 composio
 colorama
-anthropic
+anthropic>=0.70.0
 httpx_sse
 rapidfuzz
 rank-bm25
@@ -51,5 +52,4 @@ nodeenv
 pyright
 pytest
 streamlit==1.38.0
-plotly==5.23.0
-google-generativeai
+plotly>=5.23.0
