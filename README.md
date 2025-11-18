@@ -32,13 +32,13 @@ MSLCA (Memory Management for Scalable Long-Term Context in AI Agents) is a sophi
 **Main Technical Reference (3,009 lines):**
 ```bash
 # Open the comprehensive technical documentation
-code MSLCA-TECHNICAL-REFERENCE.md
+code docs/MSLCA-TECHNICAL-REFERENCE.md
 ```
 
 **Quick Start Guide:**
 ```bash
 # For first-time readers
-code START-HERE-MASTER-DOCS.md
+code docs/START-HERE-MASTER-DOCS.md
 ```
 
 ### 2. Launch the System
@@ -55,10 +55,10 @@ streamlit run streamlit_app.py
 
 ```bash
 # Create diverse test data with all status types
-python ../scripts/generate_diverse_data.py
+python scripts/generate_diverse_data.py
 
 # Or generate specific amounts
-python ../scripts/generate_synthetic_test_data.py \
+python scripts/generate_synthetic_test_data.py \
     --org-id 1234 \
     --user-id user-d1850539 \
     --episodic 30 \
@@ -73,36 +73,36 @@ python ../scripts/generate_synthetic_test_data.py \
 
 | Document | Lines | Description |
 |----------|-------|-------------|
-| **[MSLCA-TECHNICAL-REFERENCE.md](MSLCA-TECHNICAL-REFERENCE.md)** | 3,009 | Complete technical reference with 16 sections |
-| **[START-HERE-MASTER-DOCS.md](START-HERE-MASTER-DOCS.md)** | - | Quick start guide with reading paths |
-| **[2025-11-18-MASTER-DOCUMENTATION-SUMMARY.md](2025-11-18-MASTER-DOCUMENTATION-SUMMARY.md)** | - | Documentation statistics and overview |
+| **[MSLCA-TECHNICAL-REFERENCE.md](docs/MSLCA-TECHNICAL-REFERENCE.md)** | 3,009 | Complete technical reference with 16 sections |
+| **[START-HERE-MASTER-DOCS.md](docs/START-HERE-MASTER-DOCS.md)** | - | Quick start guide with reading paths |
+| **[2025-11-18-MASTER-DOCUMENTATION-SUMMARY.md](docs/2025-11-18-MASTER-DOCUMENTATION-SUMMARY.md)** | - | Documentation statistics and overview |
 
 ### Reference Guides
 
 | Document | Purpose |
 |----------|---------|
-| [QUICK-REFERENCE-TEMPORAL-MEMORY.md](QUICK-REFERENCE-TEMPORAL-MEMORY.md) | Quick reference card for temporal memory |
-| [2025-11-18-TEMPORAL-MEMORY-STATUS.md](2025-11-18-TEMPORAL-MEMORY-STATUS.md) | Comprehensive status report |
-| [2025-11-18-feature-comparison.md](2025-11-18-feature-comparison.md) | Feature matrix and comparison |
-| [2025-11-18-feature-audit-summary.md](2025-11-18-feature-audit-summary.md) | 42-feature detailed audit |
-| [2025-11-18-enhancement-roadmap.md](2025-11-18-enhancement-roadmap.md) | Implementation plan for missing features |
+| [QUICK-REFERENCE-TEMPORAL-MEMORY.md](docs/QUICK-REFERENCE-TEMPORAL-MEMORY.md) | Quick reference card for temporal memory |
+| [2025-11-18-TEMPORAL-MEMORY-STATUS.md](docs/2025-11-18-TEMPORAL-MEMORY-STATUS.md) | Comprehensive status report |
+| [2025-11-18-feature-comparison.md](docs/2025-11-18-feature-comparison.md) | Feature matrix and comparison |
+| [2025-11-18-feature-audit-summary.md](docs/2025-11-18-feature-audit-summary.md) | 42-feature detailed audit |
+| [2025-11-18-enhancement-roadmap.md](docs/2025-11-18-enhancement-roadmap.md) | Implementation plan for missing features |
 
 ### User Guides
 
 | Document | Topic |
 |----------|-------|
-| [2025-11-18-DATABASE-VIEW-TAB-GUIDE.md](2025-11-18-DATABASE-VIEW-TAB-GUIDE.md) | Database View tab usage |
-| [2025-11-18-USER-ID-PERSISTENCE-GUIDE.md](2025-11-18-USER-ID-PERSISTENCE-GUIDE.md) | User ID management |
-| [2025-11-18-DIVERSE-DATA-GUIDE.md](2025-11-18-DIVERSE-DATA-GUIDE.md) | Test data generation guide |
-| [2025-11-18-TEST-DATA-GENERATION-GUIDE.md](2025-11-18-TEST-DATA-GENERATION-GUIDE.md) | Synthetic data creation |
+| [2025-11-18-DATABASE-VIEW-TAB-GUIDE.md](docs/2025-11-18-DATABASE-VIEW-TAB-GUIDE.md) | Database View tab usage |
+| [2025-11-18-USER-ID-PERSISTENCE-GUIDE.md](docs/2025-11-18-USER-ID-PERSISTENCE-GUIDE.md) | User ID management |
+| [2025-11-18-DIVERSE-DATA-GUIDE.md](docs/2025-11-18-DIVERSE-DATA-GUIDE.md) | Test data generation guide |
+| [2025-11-18-TEST-DATA-GENERATION-GUIDE.md](docs/2025-11-18-TEST-DATA-GENERATION-GUIDE.md) | Synthetic data creation |
 
 ### Additional Documentation
 
 | Document | Content |
 |----------|---------|
-| [2025-11-18-DATABASE-VIEW-ADDED.md](2025-11-18-DATABASE-VIEW-ADDED.md) | Database View tab summary |
-| [2025-11-18-STATUS-COLORS-SUMMARY.md](2025-11-18-STATUS-COLORS-SUMMARY.md) | Status color indicators |
-| [2025-11-18-USER-ID-FIX-SUMMARY.md](2025-11-18-USER-ID-FIX-SUMMARY.md) | User ID persistence fix |
+| [2025-11-18-DATABASE-VIEW-ADDED.md](docs/2025-11-18-DATABASE-VIEW-ADDED.md) | Database View tab summary |
+| [2025-11-18-STATUS-COLORS-SUMMARY.md](docs/2025-11-18-STATUS-COLORS-SUMMARY.md) | Status color indicators |
+| [2025-11-18-USER-ID-FIX-SUMMARY.md](docs/2025-11-18-USER-ID-FIX-SUMMARY.md) | User ID persistence fix |
 
 ---
 
@@ -316,22 +316,22 @@ All memory types include temporal fields:
 
 | Script | Purpose |
 |--------|---------|
-| `verify_temporal_features.py` | Validate 10 core temporal features |
-| `generate_synthetic_test_data.py` | Create realistic test data |
-| `generate_diverse_data.py` | Generate data with all status types |
-| `quick_generate_data.py` | Fast data generation |
+| `scripts/verify_temporal_features.py` | Validate 10 core temporal features |
+| `scripts/generate_synthetic_test_data.py` | Create realistic test data |
+| `scripts/generate_diverse_data.py` | Generate data with all status types |
+| `scripts/quick_generate_data.py` | Fast data generation |
 
 ### Running Tests
 
 ```bash
 # Validate temporal features
-python ../scripts/verify_temporal_features.py
+python scripts/verify_temporal_features.py
 
 # Generate test data
-python ../scripts/generate_diverse_data.py
+python scripts/generate_diverse_data.py
 
 # Verify in Streamlit
-streamlit run ../../streamlit_app.py
+streamlit run streamlit_app.py
 ```
 
 ---
@@ -369,7 +369,7 @@ streamlit run ../../streamlit_app.py
 ❌ **Scheduled Background Tasks**  
 ❌ **Multi-Agent Coordination** (advanced features)
 
-See [2025-11-18-enhancement-roadmap.md](2025-11-18-enhancement-roadmap.md) for implementation plan.
+See [2025-11-18-enhancement-roadmap.md](docs/2025-11-18-enhancement-roadmap.md) for implementation plan.
 
 ---
 
@@ -377,9 +377,9 @@ See [2025-11-18-enhancement-roadmap.md](2025-11-18-enhancement-roadmap.md) for i
 
 ### Documentation
 
-- **Main Reference:** `MSLCA-TECHNICAL-REFERENCE.md` (start here)
-- **Quick Start:** `START-HERE-MASTER-DOCS.md`
-- **Quick Reference:** `QUICK-REFERENCE-TEMPORAL-MEMORY.md`
+- **Main Reference:** `docs/MSLCA-TECHNICAL-REFERENCE.md` (start here)
+- **Quick Start:** `docs/START-HERE-MASTER-DOCS.md`
+- **Quick Reference:** `docs/QUICK-REFERENCE-TEMPORAL-MEMORY.md`
 
 ### External Links
 
@@ -446,22 +446,22 @@ See [2025-11-18-enhancement-roadmap.md](2025-11-18-enhancement-roadmap.md) for i
 
 1. **Read the Documentation**
    ```bash
-   code MSLCA-TECHNICAL-REFERENCE.md
+   code docs/MSLCA-TECHNICAL-REFERENCE.md
    ```
 
 2. **Try the System**
    ```bash
-   streamlit run ../../streamlit_app.py
+   streamlit run streamlit_app.py
    ```
 
 3. **Generate Test Data**
    ```bash
-   python ../scripts/generate_diverse_data.py
+   python scripts/generate_diverse_data.py
    ```
 
 4. **Explore the Code**
    ```bash
-   code ../../mirix/services/temporal_reasoning_service.py
+   code mirix/services/temporal_reasoning_service.py
    ```
 
 5. **Join the Community**
@@ -508,9 +508,9 @@ This comprehensive documentation was created through:
 
 **Ready to get started?**
 
-→ **Open: [MSLCA-TECHNICAL-REFERENCE.md](MSLCA-TECHNICAL-REFERENCE.md)**
+→ **Open: [MSLCA-TECHNICAL-REFERENCE.md](docs/MSLCA-TECHNICAL-REFERENCE.md)**
 
-→ **Or for quick start: [START-HERE-MASTER-DOCS.md](START-HERE-MASTER-DOCS.md)**
+→ **Or for quick start: [START-HERE-MASTER-DOCS.md](docs/START-HERE-MASTER-DOCS.md)**
 
 ---
 
