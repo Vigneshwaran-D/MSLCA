@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-MIRIX Temporal Reasoning Streamlit App
+MSLCA Temporal Reasoning Streamlit App
 
 Launch the interactive web interface for managing temporal reasoning and memory decay.
 
