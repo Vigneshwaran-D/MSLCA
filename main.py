@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Mirix - AI Assistant Application
-Entry point for the Mirix application.
+MSLCA - Memory Management for Scalable Long-Term Context in AI Agents
+Entry point for the MSLCA application.
 """
 
 import argparse
@@ -19,8 +19,8 @@ sys.path.insert(0, str(project_root))
 
 
 def main():
-    """Main entry point for Mirix application."""
-    parser = argparse.ArgumentParser(description="Mirix AI Assistant Server")
+    """Main entry point for MSLCA application."""
+    parser = argparse.ArgumentParser(description="MSLCA - Memory Management AI Assistant Server")
     parser.add_argument("--host", default="0.0.0.0", help="Host to bind the server to")
     parser.add_argument(
         "--port", type=int, default=None, help="Port to bind the server to"
@@ -33,7 +33,7 @@ def main():
     if port is None:
         port = int(os.environ.get("PORT", 47283))
 
-    print(f"Starting Mirix server on {args.host}:{port}")
+    print(f"Starting MSLCA server on {args.host}:{port}")
 
     import uvicorn
 
